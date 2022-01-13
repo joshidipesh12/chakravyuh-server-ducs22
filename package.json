@@ -1,0 +1,30 @@
+{
+  "name": "chakravyuh-server",
+  "version": "0.0.1_beta.1",
+  "description": "The Server for handling the APIs for the Chakravyuh event.",
+  "main": "./app/server.js",
+  "scripts": {
+    "start": "nodemon ./app/server.js",
+    "server-prep-prod": "Ignore: node ./build/clear.js && tsc",
+    "prep-prod": "Ignore: npm run server-prep-prod && node ./build/taskRunner.js && cd dist && zip -r  sms-app .",
+    "dev": "Ignore: npm run server-prep-prod && node ./build/taskRunner.js && cd dist && npm run start",
+    "test": "Ignore: export NODE_ENV='test' && tsc && mocha --require babel-core/register --bail  test/cases/**/*.js"
+  },
+  "author": "GDSC-DUCS-DEVS",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "body-parser": "^1.19.1",
+    "config": "^3.3.7",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
+    "express-list-endpoints": "^6.0.0",
+    "google-auth-library": "^7.11.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15",
+    "serve-favicon": "^2.5.0",
+    "uuid": "^8.3.2"
+  }
+}
