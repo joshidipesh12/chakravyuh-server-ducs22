@@ -2,12 +2,12 @@
 
 # RUN LOCAL
 
-- yarn install
-- yarn start
+- yarn install or npm i
+- yarn start or npm start
 
-# PRODUCTION BUILD:
+<!-- # PRODUCTION BUILD:
 
-- yarn install
+- yarn install npm
 - yarn run prep-prod 
 
 # TEST RUN
@@ -17,4 +17,4 @@ PRE REQUESTIES :
 1. run either sql script or dbHandler to create test db
 
 - yarn install
-- yarn run test
+- yarn run test -->
